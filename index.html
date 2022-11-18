@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Form</title>
+    <style>
+      /* Write all necessery css here  */
+
+      .container{
+       display: grid;
+       grid-template-columns: repeat(1,fr);
+       border-radius: 10px;
+       width: 35%;
+       height: 600px;
+       margin: auto;
+       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+     
+    
+      form{
+        margin-left: 20px;
+      }
+
+          .container form input[type="submit"] {
+         margin-top: 20px;
+         margin-bottom: 1em;
+        
+         padding: 0 16px;
+         width: 97%;
+         height: 50px;
+        
+         
+       } 
+        .container form input[type="email"],input[type="number"],input[type="password"],input[type="submit"],input[type="text"] {
+          margin-top: 20px;
+          margin-bottom: 1em;
+          padding: 0 16px;
+          width: 90%;
+          height: 45px;
+         
+        } 
+        .container form input[type="password"] {
+         
+          border-radius: 0px 3px 3px 0px;
+          margin-top: 20px;
+          margin-bottom: 1em;
+          padding: 0 16px;
+          width: 90%;
+          height: 45px;
+          
+        }
+     .container h1{
+      text-align: center;
+     }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1 >Signup Form</h1>
+        <!-- Create the Signup form here  -->
+        <form>
+         
+          <input type="text" id="name" placeholder="Name" required> <br/>  
+          <input type="email" id="name" placeholder=" Email Address" required><br/> 
+          <input type="text" id="name" placeholder="country" required><br/> 
+          <input type="number" id="name" placeholder="phone" required><br/> 
+          <input type="password" id="name" placeholder="Password" required><br/> 
+          <input type="submit" id= "name" value="Create Account" ><br/>
+
+      </form>
+    </div>
+  </div>
+
+    <div class="container" style="margin-top: 20px;" >
+    <div>
+      <h1>Signin Form</h1>
+      <!-- Create the Signin Form Here  -->
+      <form>
+        <input type="email" id="userName" placeholder="Name" required><br/>
+        <input type="email" id= "userPw" placeholder="Email" required><br/>
+        <input type="password" id= "userPw" placeholder="Password" required><br/>
+        <input id= "login_btn" type="submit" value="Signin">
+    </form>
+  </div>
+ </div>
+    
+  </body>
+</html>
